@@ -1,23 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import Profile from "./Profile/profile";
+import profileOne from './Profile/profileOne';
+import "./App.css";
 
 function App() {
+  const styleObject = {listStyleType :"diamond" ,fontWeight: "bolder" ,fontFamily :"ultra-condensed",transform : "translate3d" ,borderWidth : "thick", borderStyle:"ridge",borderColor :"white", backgroundAttchement : "scroll", backgroundColor:'#FFF0F5', color :"#4B0082", textAlign: 'center'}
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style = {styleObject} className="App">
+      <profileOne/>
+      <Profile/>
     </div>
   );
 }
